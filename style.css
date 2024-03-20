@@ -79,7 +79,7 @@ header{
     border-radius: 32px;
     color: var(--dark-blue-dark-blue-300);
     padding: 25px;
-    height: 96%;
+    height: 90vh;
     width: auto;
 }
 
@@ -202,7 +202,7 @@ footer{
     .textarea-mensaje{
         padding: 25px;
         height: 50vh;
-        background-size: 50%;
+        background-size: 46%;
         background-position: 48% 26%;
     }
 
@@ -303,6 +303,10 @@ footer{
 
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .content-2{
+        padding: 10px 0 0 50px;
+    }
+
     .button-encriptar{
         margin-bottom: 12px;
         width: 45%;
@@ -313,11 +317,37 @@ footer{
         margin-bottom: 45px;
         width: 45%;
         font-size: 25px;
+    }
+
+    .content-1{
+    padding: 10px 0 10px 50px;
+    width: 100%;
+    }
+
+    .textarea-mensaje{
+        height: 90vh;
+        width: 28vw;
+        background-position: 50% 45%;
+        background-size: 70%;
+    }
+
+    .button-copiar{
+        width: 250px;
+        left: 12%;
+        bottom: 46px;
+    }
+
+    .copyright{
+        margin-top: 18px;
     }
 }
 
 /* Escritorio grande */
 @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .content-2{
+        padding: 10px 0 0 50px;
+    }
+
     .button-encriptar{
         margin-bottom: 12px;
         width: 45%;
@@ -330,6 +360,27 @@ footer{
         font-size: 25px;
     }
 
+    .content-1{
+    padding: 10px 0 10px 50px;
+    width: 100%;
+    }
+
+    .textarea-mensaje{
+        height: 90vh;
+        width: 28vw;
+        background-position: 50% 45%;
+        background-size: 70%;
+    }
+
+    .button-copiar{
+        width: 300px;
+        left: 5%;
+        bottom: 46px;
+    }
+
+    .copyright{
+        margin-top: 18px;
+    }
 }
 
 
@@ -357,6 +408,11 @@ footer{
     .content-1{
         grid-area: content-1;
         padding: 10px 0 10px 180px; /* CAMBIAR EN EL MEDIAQUERY A => padding: 8px 0 8px 8px; */
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
     }
     
     .textarea-ingreseTexto{
@@ -396,13 +452,14 @@ footer{
         background: var(--white);
         background-image: url(img/muñeco.png);
         background-repeat: no-repeat;
-        background-position: 45% 50%;
+        background-position: 48% 35%;
+        background-size: 60%;
         box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
         border: none;
         border-radius: 32px;
         color: var(--dark-blue-dark-blue-300);
-        padding: 25px;
-        height: 96%;
+        padding: 35px;
+        height: 80vh;
         width: auto;
     }
     
@@ -420,7 +477,7 @@ footer{
         height: 67px;
         position: absolute;
         left: 10%;
-        bottom: 0;
+        bottom: 46px;
     }
     
     .content-2{
@@ -473,7 +530,7 @@ footer{
         color: var(--gray-gray-400);
         font-size: 18px;
         text-align: center;
-        margin-top: 90px;
+        margin-top: 20px;
     }
     
 }
