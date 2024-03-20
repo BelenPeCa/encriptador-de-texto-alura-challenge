@@ -51,3 +51,10 @@ function copiar(){
     mensaje.select()
     document.execCommand('copy');
 }
+
+
+function limpiarImagenTextarea(){
+    let muñeco = document.querySelector(".textarea-mensaje");
+
+    muñeco.style.backgroundImage = 'none';
+}
